@@ -14,12 +14,11 @@ enum OrderStatus {
 }
 
 enum PhoneModel {
-  iphonex
-  iphone11
-  iphone12
-  iphone13
-  iphone14
-  iphone15
+  iphone11prm
+  iphone12prm
+  iphone13prm
+  iphone14prm
+  iphone15prm
 }
 
 enum CaseMaterial {
