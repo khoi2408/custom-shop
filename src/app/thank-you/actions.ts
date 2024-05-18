@@ -28,5 +28,4 @@ export const getPaymentStatus = async ({ orderId }: { orderId: string }) => {
   } else {
     return false;
   }
-  
 };

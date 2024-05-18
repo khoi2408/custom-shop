@@ -20,7 +20,7 @@ const ThankYou = () => {
 
   if (data === undefined) {
     return (
-      <div className="w-full m-24 flex justify-center">
+      <div className="w-full mt-24 flex justify-center">
         <div className="flex flex-col items-center gap-2">
           <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
           <h3 className="font-semibold text-xl">Loading your order...</h3>
@@ -32,7 +32,7 @@ const ThankYou = () => {
 
   if (data === false) {
     return (
-      <div className="w-full m-24 flex justify-center">
+      <div className="w-full mt-24 flex justify-center">
         <div className="flex flex-col items-center gap-2">
           <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
           <h3 className="font-semibold text-xl">Verifying your payment...</h3>
@@ -47,10 +47,10 @@ const ThankYou = () => {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-3xl px-4 py-6 sm:px-6 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="max-w-xl">
           <p className="text-base font-medium text-primary">Thank you!</p>
-          <h1 className="mt-2 text-4xk font-bold tracking-tight sm:text-5xl">
+          <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
             Your case is on the way!
           </h1>
           <p className="mt-2 text-base text-zinc-500">
@@ -87,7 +87,7 @@ const ThankYou = () => {
         <div>
           <div className="grid grid-cols-2 gap-x-6 py-10 text-sm">
             <div>
-              <p className="font-semibold text-gray-900">Shipping address</p>
+              <p className="font-medium text-gray-900">Shipping address</p>
               <div className="mt-2 text-zinc-700">
                 <address className="not-italic">
                   <span className="block">{shippingAddress?.name}</span>
@@ -99,7 +99,7 @@ const ThankYou = () => {
               </div>
             </div>
             <div>
-              <p className="font-semibold text-gray-900">Billing address</p>
+              <p className="font-medium text-gray-900">Billing address</p>
               <div className="mt-2 text-zinc-700">
                 <address className="not-italic">
                   <span className="block">{billingAddress?.name}</span>
